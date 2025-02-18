@@ -7995,6 +7995,12 @@ textarea.form-control-lg {
   text-align: center !important;
 }
 
+.text-center--about {
+  background-color: #f8f8f8;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
 .text-decoration-none {
   text-decoration: none !important;
 }
@@ -10841,6 +10847,7 @@ body {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
+  
 }
 
 .btn-xl {
@@ -10885,7 +10892,7 @@ hr.divider-light {
   color: #f4623a;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  color: #da2b36 !important;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -10992,4 +10999,74 @@ header.masthead h1, header.masthead .h1 {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+.language__img {
+  width: 100%;
+  max-width: 100px;
+  transition: all 300ms ease;
+}
+
+.language:hover .language__img {
+  filter: brightness(80%);
+  opacity: 0.86;
+  transform: scale(0.9);
+}
+
+.language {
+  width: 25%;
+display: flex;
+justify-content: center;
+position: relative;
+}
+
+.language__img--wrapper {
+  display: flex;
+justify-content: center;
+align-items: center;
+padding: 25px 16px;
+}
+
+.language__list {
+  display: flex;
+justify-content: center;
+width: 100%;
+flex-wrap: wrap;
+}
+
+.language__name {
+  position: absolute;
+bottom: 0;
+transform: scale(0);
+transition: all 300ms;
+font-size: 20px;
+opacity: 0;
+}
+
+.language:hover .language__name {
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+/* My Languages Section */
+.container {
+  padding: 50px 0;;
+}
+
+.row_lang {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 12px;
+}
+
+.lang__title {
+  text-align: center;
+}
+
+.text--purple {
+  color: #6030b1;
 }
