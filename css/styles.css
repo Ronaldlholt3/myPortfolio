@@ -1282,6 +1282,7 @@ progress {
   .col-lg-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
+    background-color: #000;
   }
   .col-lg-5 {
     flex: 0 0 auto;
@@ -8167,7 +8168,7 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: black !important;
 }
 
 .bg-dark {
@@ -10992,7 +10993,7 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: #f7ef0ac7;
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -11077,4 +11078,16 @@ opacity: 0;
 
 .text--red {
   color: red;
+}
+
+.footer__logo--img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  padding-bottom: 30px;
+}
+
+.center-it {
+  display: flex;
+  justify-content: center;
 }
