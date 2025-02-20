@@ -8090,6 +8090,10 @@ textarea.form-control-lg {
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-black {
+  color: #000;
+}
+
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
@@ -10850,6 +10854,10 @@ body {
   
 }
 
+.text-anyc {
+  color: #000;
+}
+
 .btn-xl {
   padding: 1.25rem 2.25rem;
   font-size: 0.85rem;
@@ -11067,6 +11075,6 @@ opacity: 0;
   text-align: center;
 }
 
-.text--purple {
-  color: #6030b1;
+.text--red {
+  color: red;
 }
