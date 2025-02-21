@@ -11011,8 +11011,8 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .language__img {
-  width: 100%;
-  max-width: 100px;
+  width: 100%; /*with width being 100%*/
+  max-width: 100px;/*also with this, makes the images more responsive*/
   transition: all 300ms ease;
 }
 
@@ -11023,44 +11023,44 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .language {
-  width: 25%;
+width: 25%;
 display: flex;
 justify-content: center;
-position: relative;
-}
+position: relative; /*without this one piece of code my names would never been properly positioned*/
+}/*lets css know to look at the relative parent*/
 
-.language__img--wrapper {
-  display: flex;
+.language__img--wrapper { /*This style was used to center my language*/
+display: flex;
 justify-content: center;
 align-items: center;
 padding: 25px 16px;
 }
 
-.language__list {
-  display: flex;
+.language__list { /*At first my images was only in a row going down*/
+  display: flex;/*Targeted the list as a whole to have my content align horizontally*/
 justify-content: center;
 width: 100%;
-flex-wrap: wrap;
+flex-wrap: wrap; /*This wraps the image within a certain perimeter to keep content from spilling out. Which is how I got the remaining 4 to align under the top 4*/
 }
 
 .language__name {
-  position: absolute;
-bottom: 0;
-transform: scale(0);
-transition: all 300ms;
+position: absolute;
+bottom: 0; /*How I got the names to the bottom of my images*/
+transform: scale(0); /*This allow the name of what image I had to be shown*/
+transition: all 300ms; /*This helps the hover effect move more smoothly instead of a rough type press*/
 font-size: 20px;
 opacity: 0;
 }
 
-.language:hover .language__name {
+.language:hover .language__name { /*This allow the ability when we hover over the image that's when the name show up*/
   transform: scale(1);
-  opacity: 1;
+  opacity: 1; /*creates that fade in from the zoom in effect*/
 }
 
 
 /* My Languages Section */
 .container {
-  padding: 50px 0;;
+  padding: 50px 0; 
 }
 
 .row_lang {
